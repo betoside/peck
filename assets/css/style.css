@@ -1,0 +1,73 @@
+
+:root {
+    --verde-padrao: #004d59;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; font-size: 13px; }
+.Montserrat { font-family: 'Montserrat', sans-serif; }
+.dn { display: none; }
+.ttu { text-transform: uppercase; }
+.container { max-width: 1600px; padding: 0 20px; margin: 0 auto; }
+
+header { background-color: var(--verde-padrao); color: #1ec8d2; }
+header .container { height: 132px; display: flex; justify-content: space-between; align-items: center; padding-left: 40px; padding-right: 40px;}
+header .border { height: 11px; background:#2ec8d1; background: linear-gradient(45deg,#004d59, #2ec8d1); }
+
+.navegacao { display: flex;align-items: center;}
+
+.menuMobile { display: none; width: 40px; height: 40px; margin-top: 40px; margin-bottom: 40px; margin-right: 20px; }
+.mm-line { height: 3px; background-color: var(--azul-claro); }
+
+.menu ul,
+.menu li {list-style: none;}
+.menu li {display: inline;padding: 0 25px;}
+.menu li a { text-transform: uppercase; color: #1ec8d2; /*font-size: 25px;*/ font-size: 19px; text-decoration: none; font-weight: 300; }
+.menu li.active a,
+.menu li a:hover { color: #fff; }
+
+/* .navegacao .social {} */
+.navegacao .social ul {display: flex;}
+.navegacao .social ul,
+.navegacao .social li { list-style: none; }
+.navegacao .social li { list-style: none; }
+/* .navegacao .social li { display: inline; } */
+.navegacao .social li a { 
+    display: block; width: 26px; height: 26px; text-indent: -9000px; margin-left: 5px;
+    background: url(../images/icos-social-header.gif) no-repeat;
+}
+.navegacao .social li .instagram { background-position: 0 0;} 
+.navegacao .social li .twitter { background-position: -31px 0;} 
+.navegacao .social li .facebook { background-position: -63px 0;} 
+.navegacao .social li .linkedin { background-position: -94px 0;} 
+.navegacao .social li .email { background-position: -138px 0;} 
+.navegacao .social li .instagram:hover { background-position: 0 -30px;} 
+
+.navegacao .social li .twitter:hover { background-position: -31px -30px;} 
+.navegacao .social li .facebook:hover { background-position: -63px -30px;} 
+.navegacao .social li .linkedin:hover { background-position: -94px -30px;} 
+.navegacao .social li .email:hover { background-position: -138px -30px;} 
+
+.navegacao .social li .email {width: 33px;margin-left: 15px;} 
+
+.idioma {margin-left: 40px; display: flex;}
+.idioma a { display: inline-block; }
+.idioma a:last-child { margin-left: 10px; }
+.idioma img { width: 52px;}
+
+.slider-area { height: calc(100vh - 143px); background: #0f0;}
+.item-slider { background: url(../images/slider-modelo.jpg) no-repeat center; background-size: cover;height: 100%;}
+
+.quem-somos {padding-top: 90px;padding-bottom: 70px;}
+.titulo-default { margin-bottom: 60px; }
+.titulo-default h2 { font-size: 50px; font-weight: 400; color: var(--verde-padrao);text-transform: uppercase; }
+.titulo-default .grafismo { height: 58px; background: url(../images/titulo-grafismo.png) no-repeat right 0;}
+
+.quem-somos h3,
+.quem-somos p {margin: 0; margin-bottom: 30px;}
+.quem-somos h3 {font-weight: 500;text-transform: uppercase;color: var(--verde-padrao); font-size: 24px;}
+.quem-somos p { font-weight: 400;color: #707070;font-size: 20px; }
+.quem-somos .corpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
