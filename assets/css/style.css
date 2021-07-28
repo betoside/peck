@@ -11,7 +11,13 @@ body { font-family: 'Montserrat', sans-serif; font-size: 13px; }
 
 header { background-color: var(--verde-padrao); color: #1ec8d2; }
 header .container { height: 132px; display: flex; justify-content: space-between; align-items: center; padding-left: 40px; padding-right: 40px;}
-header .border { height: 11px; background:#2ec8d1; background: linear-gradient(45deg,#004d59, #2ec8d1); }
+.border-gradient { 
+    height: 11px; background:#2ec8d1; 
+    background: linear-gradient(45deg,#004d59, #2ec8d1); 
+    background: -moz-linear-gradient(45deg,#004d59, #2ec8d1); 
+    background: -o-linear-gradient(45deg,#004d59, #2ec8d1); 
+    background: -webkit-linear-gradient(45deg,#004d59, #2ec8d1); 
+}
 
 .navegacao { display: flex;align-items: center;}
 
@@ -59,7 +65,7 @@ header .border { height: 11px; background:#2ec8d1; background: linear-gradient(4
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
 .titulo-default { margin-bottom: 60px; }
-.titulo-default h2 { font-size: 50px; font-weight: 400; color: var(--verde-padrao);text-transform: uppercase; }
+.titulo-default h2 { font-size: 50px; font-weight: 300; color: var(--verde-padrao);text-transform: uppercase; }
 .titulo-default .grafismo { height: 58px; background: url(../images/titulo-grafismo.png) no-repeat right 0;}
 
 .quem-somos h3,
@@ -71,3 +77,11 @@ header .border { height: 11px; background:#2ec8d1; background: linear-gradient(4
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
 }
+.quem-somos .grafismo img {max-width: 100%;}
+.quem-somos .grafismo { display: flex; }
+
+.visao-section {background: url(../images/section-visao.jpg) no-repeat center; background-size: cover;}
+.visao-section .container {padding-top: 50px;padding-bottom: 220px;}
+.visao-section .titulo-default h2 { color: #fff; }
+.visao-section .corpo {font-size: 45px;font-weight: 500;font-style: italic;color: #fff;}
+.visao-section .corpo p {margin-bottom: 70px;text-align: center;}
