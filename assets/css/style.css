@@ -117,3 +117,13 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .pessoas-section .corpo { display: flex; justify-content: center; flex-wrap: wrap; }
 .pessoas-section .corpo .pessoa { width: 33.33%; /*flex-grow: 3;*/ height: 345px; }
 .pessoas-section .corpo .pessoa img {max-width: 100%;}
+
+
+.reconhecimento-section {background: #fff;}
+.reconhecimento-section .container {padding-top: 86px; }
+.reconhecimento-section .titulo-default { margin-bottom: 40px; }
+.reconhecimento-section .olho {font-size: 36px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 85px;}
+.reconhecimento-section .olho strong {display: inline-block;}
+.reconhecimento-section .corpo { display: flex; flex-wrap: wrap; max-width: 1100px; margin: 0 auto 150px; }
+.reconhecimento-section .corpo .selo { width: 20%; display: flex;align-items: center; justify-content: center; padding-bottom: 20px;}
+.reconhecimento-section .corpo .selo img {max-width: 100%;}
