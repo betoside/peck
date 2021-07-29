@@ -8,6 +8,7 @@ body { font-family: 'Montserrat', sans-serif; font-size: 13px; }
 .dn { display: none; }
 .ttu { text-transform: uppercase; }
 .container { max-width: 1600px; padding: 0 20px; margin: 0 auto; }
+p {line-height: 150%;}
 
 header { background-color: var(--verde-padrao); color: #1ec8d2; }
 header .container { height: 132px; display: flex; justify-content: space-between; align-items: center; padding-left: 40px; padding-right: 40px;}
@@ -85,3 +86,26 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .visao-section .titulo-default h2 { color: #fff; }
 .visao-section .corpo {font-size: 45px;font-weight: 500;font-style: italic;color: #fff;}
 .visao-section .corpo p {margin-bottom: 70px;text-align: center;}
+
+.valores-section .container {padding-top: 50px;padding-bottom: 220px;}
+.valores-corpo {display: flex; flex-wrap: wrap; /*margin: 0 -15px;*/ justify-content: space-between; }
+.valores-corpo .valor-item {border: 1px solid var(--verde-padrao);padding: 30px 25px 20px;width: 32%;/*margin: 15px;*/ margin-bottom: 30px;}
+.valores-corpo .img {min-height: 186px; margin-bottom: 13px;}
+.valores-corpo .img img {max-width: 100%;}
+.valores-corpo h4 {font-size: 19px; color: #1ec8d2; text-transform: uppercase;min-height: 50px; margin-bottom: 10px;font-weight: 600;}
+.valores-corpo p {font-size: 19px; color: #575756; margin-bottom: 38px;font-weight: 300;text-align: justify;margin-bottom: 0;}
+
+.atuacao-section { background: url(../images/atuacao-section.jpg) center bottom var(--verde-padrao) no-repeat; background-size:contain; }
+.atuacao-section .container {padding-top: 50px;padding-bottom: 0px;}
+.atuacao-section .titulo-default h2 { color: #fff; }
+.atuacao-section .corpo { display: flex; justify-content: space-between; flex-wrap: wrap; }
+
+.atuacao-item { width: 48%; color: #fff;font-size: 19px;margin-bottom: 65px;}
+.atuacao-item .img {/*height: 196px;*/ margin-bottom: 35px; }
+.atuacao-item .img img {border-left: 23px solid #2ec8d0; max-width: 100%;}
+.atuacao-item h4 {font-size: 24px; color: #1ec8d2; text-transform: uppercase;min-height: 45px; margin-bottom: 11px;font-weight: 600;}
+.atuacao-item p {margin-bottom: 38px;font-weight: 300;text-align: justify;}
+.atuacao-item ul { padding-left: 20px; }
+.atuacao-item li { list-style: url('../images/atuacao-list-style.gif'); margin-bottom: 7px;}
+
+
