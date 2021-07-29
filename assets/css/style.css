@@ -109,3 +109,11 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .atuacao-item li { list-style: url('../images/atuacao-list-style.gif'); margin-bottom: 7px;}
 
 
+.pessoas-section {background: #fff;}
+.pessoas-section .container {padding-top: 86px; padding-bottom: 90px;}
+.pessoas-section .titulo-default { margin-bottom: 40px; }
+.pessoas-section .olho {font-size: 36px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
+.pessoas-section .olho strong {display: inline-block;}
+.pessoas-section .corpo { display: flex; justify-content: center; flex-wrap: wrap; }
+.pessoas-section .corpo .pessoa { width: 33.33%; /*flex-grow: 3;*/ height: 345px; }
+.pessoas-section .corpo .pessoa img {max-width: 100%;}
