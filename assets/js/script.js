@@ -19,7 +19,6 @@ $(function(){
     });
 
     document.querySelector('.botao-topo').addEventListener('click',()=>{
-        console.log('pah');
         jQuery('body,html').animate({
             scrollTop: 0
           }, 800);

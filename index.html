@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css?1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Peck</title>
@@ -14,7 +17,7 @@
     <header>
         <div class="container">
 
-            <div class="logo">
+            <div class="logo" data-aos="fade-down" data-aos-duration="300">
                 <a href="index.html">
                     <img src="assets/images/logo.gif" alt="">
                     <img src="assets/images/logo-advogados.gif" alt="">
@@ -29,7 +32,7 @@
                             <div class="mm-line"></div>
                             <div class="mm-line"></div>
                         </div>
-                        <ul>
+                        <ul data-aos="fade-down" data-aos-duration="800">
                             <li class="active-"><a class="navegador" href="#nav-quemsomos">quem somos</a></li>
                             <li><a class="navegador" href="#nav-areas">áreas</a></li>
                             <li><a class="navegador" href="#nav-pessoas">pessoas</a></li>
@@ -37,7 +40,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="social">
+                <div class="social" data-aos="zoom-out-right">
                     <ul>
                         <li><a href="https://www.instagram.com/peckadvogados/" target="_blank" class="ico-social-header instagram">instagram</a></li>
                         <li><a href="" class="ico-social-header twitter">twiter</a></li>
@@ -46,7 +49,7 @@
                         <li><a href="" class="ico-social-header email">email</a></li>
                     </ul>
                 </div>
-                <div class="idioma">
+                <div class="idioma" data-aos="zoom-out-right">
                     <a href=""><img src="assets/images/ingles.png" alt="English"></a>
                     <a href=""><img src="assets/images/espanhol.png" alt="Spanish"></a>
                 </div>
@@ -58,15 +61,18 @@
     </header>
 
     <section class="slider-area">
-        <div class="item-slider"></div>
+        <div class="item-slider">
+            <div class="conteudo-01"></div>
+            <div class="conteudo-02"></div>
+        </div>
     </section>
 
     <section class="quem-somos">
         <div class="container">
 
             <div class="titulo-default">
-                <h2 id="nav-quemsomos">Quem Somos</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right" id="nav-quemsomos">Quem Somos</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
 
             <div class="corpo">
@@ -105,9 +111,9 @@
 
             </div>
             <div class="grafismo">
-                <div class="left"><img src="assets/images/grafismo-left.jpg" alt=""></div>
-                <div class="center"><img src="assets/images/grafismo-center.jpg" alt=""></div>
-                <div class="right"><img src="assets/images/grafismo-right.jpg" alt=""></div>
+                <div class="left" data-aos="fade-right"><img src="assets/images/grafismo-left.jpg" alt=""></div>
+                <div class="center" data-aos="fade-up"><img src="assets/images/grafismo-center.jpg" alt=""></div>
+                <div class="right" data-aos="fade-down"><img src="assets/images/grafismo-right.jpg" alt=""></div>
             </div>
 
         </div>
@@ -118,8 +124,8 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2>visão</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right">visão</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
 
             <div class="corpo">
@@ -138,15 +144,15 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2>valores</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right">valores</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
 
             <div class="valores-corpo">
 
                 <div class="valor-item">
                     <div class="img">
-                        <img src="assets/images/valores-icos-parceria.jpg" alt="Parceria para o sucesso do cliente">
+                        <img data-aos="fade-right" src="assets/images/valores-icos-parceria.jpg" alt="Parceria para o sucesso do cliente">
                     </div>
                     <h4>Parceria para o sucesso do cliente</h4>
                     <p>
@@ -156,7 +162,7 @@
 
                 <div class="valor-item">
                     <div class="img">
-                        <img src="assets/images/valores-icos-diversidade.jpg" alt="Diversidade de Pessoas e Saberes">
+                        <img data-aos="fade-up" src="assets/images/valores-icos-diversidade.jpg" alt="Diversidade de Pessoas e Saberes">
                     </div>
                     <h4>Diversidade de Pessoas e Saberes</h4>
                     <p>
@@ -166,7 +172,7 @@
 
                 <div class="valor-item">
                     <div class="img">
-                        <img src="assets/images/valores-icos-agilidade.jpg" alt="Time preparado, entrega garantida">
+                        <img data-aos="fade-down" src="assets/images/valores-icos-agilidade.jpg" alt="Time preparado, entrega garantida">
                     </div>
                     <h4>Time preparado, entrega garantida</h4>
                     <p>
@@ -176,7 +182,7 @@
 
                 <div class="valor-item">
                     <div class="img">
-                        <img src="assets/images/valores-icos-time.jpg" alt="Time preparado, entrega garantida">
+                        <img data-aos="fade-down" src="assets/images/valores-icos-time.jpg" alt="Time preparado, entrega garantida">
                     </div>
                     <h4>Time preparado, entrega garantida</h4>
                     <p>
@@ -186,7 +192,7 @@
 
                 <div class="valor-item">
                     <div class="img">
-                        <img src="assets/images/valores-icos-conhecimento.jpg" alt="Conhecimento Avançado e Inovador">
+                        <img data-aos="fade-up" src="assets/images/valores-icos-conhecimento.jpg" alt="Conhecimento Avançado e Inovador">
                     </div>
                     <h4>Conhecimento Avançado e Inovador</h4>
                     <p>
@@ -196,7 +202,7 @@
 
                 <div class="valor-item">
                     <div class="img">
-                        <img src="assets/images/valores-icos-educar.jpg" alt="Educar para evoluir">
+                        <img data-aos="fade-right" src="assets/images/valores-icos-educar.jpg" alt="Educar para evoluir">
                     </div>
                     <h4>Educar para evoluir</h4>
                     <p>
@@ -215,14 +221,14 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2 id="nav-areas">áreas</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right" id="nav-areas">áreas</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
 
             <div class="corpo">
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-assessoria.jpg" alt="+ assessoria jurídica para inovação digital"></div>
+                    <div class="img"><img data-aos="fade-up" src="assets/images/atuacao-assessoria.jpg" alt="+ assessoria jurídica para inovação digital"></div>
                     <h4>+ assessoria jurídica para inovação digital</h4>
                     <p>
                         Somos um escritório voltado para apoiar a inovação digital dos clientes, em sua jornada de transformação tecnológica, desde a <strong><em>Startup</em></strong> aos grandes grupos econômicos nacionais e internacionais. Para tanto, realizamos o <strong><em>due dilligence</em></strong> de seus ativos intangíveis para estarem em compliance com as novas regulamentações. Elaboramos estudos de viabilidade jurídica e análise de risco dos projetos para apoiar a utilização de assinatura digital, biometria, reconhecimento facial, <strong><em>blockchain</em></strong>, criptomoedas, <strong><em>NFTs</em></strong>, uso de dados em produtos e serviços, em setores que vão de Telemedicina ao <strong><em>Open Banking</em></strong>.
@@ -239,7 +245,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-lgpd.jpg" alt="+ lgpd e serviço de dpo"></div>
+                    <div class="img"><img data-aos="fade-right" src="assets/images/atuacao-lgpd.jpg" alt="+ lgpd e serviço de dpo"></div>
                     <h4>+ lgpd e serviço de dpo</h4>
                     <p>
                         Apoiamos os clientes públicos e privados na definição do seu modelo de Data Ethics e na implementação do Programa de Privacidade e Proteção de Dados, considerando contexto da legislação Brasileira (LGPD) bem como legislações internacionais. Nossa solução jurídica prevê desde o desenvolvimento do projeto de gestão e do <strong><em>roadmap</em></strong> de conformidade, ao levantamento do inventário de dados pessoais até a prestação do serviço de Encarregado de Dados <strong><em>(DPO)</em></strong>, bem como suporte junto ao atendimento de titulares, autoridade ANPD e resposta à incidentes. Também ajudamos o cliente na mudança de cultura através de workshops e treinamentos. 
@@ -253,7 +259,7 @@
                 </div>              
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-societario.jpg" alt="+ societário digital e contratos de tecnologia "></div>
+                    <div class="img"><img data-aos="fade-up" src="assets/images/atuacao-societario.jpg" alt="+ societário digital e contratos de tecnologia "></div>
                     <h4>+ societário digital e contratos de tecnologia </h4>
                     <p>
                         O escritório presta todo suporte relacionado aos contratos societários que envolvam negócios ou operações de inovação e/ou uso de novas tecnologias, M&A, contratos relacionados ao uso de tecnologia em geral bem como presta apoio em mediação e arbitragem para solução de conflitos.
@@ -267,7 +273,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-proprietario.jpg" alt="+ propriedade intelectual"></div>
+                    <div class="img"><img data-aos="fade-right" src="assets/images/atuacao-proprietario.jpg" alt="+ propriedade intelectual"></div>
                     <h4>+ propriedade intelectual</h4>
                     <p>
                         Atuamos na proteção dos principais ativos intelectuais, para evitar exposição, violação e ameaças à Marca e Reputação das Instituições. Apoiamos na blindagem legal da inovação digital com registro de patentes e softwares. Prestamos consultoria em direitos autorais e de imagem e fazemos <strong><em>due dilligence</em></strong> para análise de riscos em PI.
@@ -281,7 +287,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-ciberseguranca.jpg" alt="+ cibersegurança e defesa cibernética "></div>
+                    <div class="img"><img data-aos="fade-up" src="assets/images/atuacao-ciberseguranca.jpg" alt="+ cibersegurança e defesa cibernética "></div>
                     <h4>+ cibersegurança e defesa cibernética </h4>
                     <p>
                         Prestamos assessoria para conformidade e governança de segurança cibernética das instituições, considerando as novas regulamentações e as melhores práticas de mercado, especialmente no novo contexto de virtualização maior do trabalho, uso de recursos de <strong><em>home office</em></strong> e <strong><em>cloud</em></strong>. Participamos do Comitê e orientamos na prevenção e na resposta à incidentes.
@@ -295,7 +301,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-inteligencia.jpg" alt="+ inteligência artificial"></div>
+                    <div class="img"><img data-aos="fade-right" src="assets/images/atuacao-inteligencia.jpg" alt="+ inteligência artificial"></div>
                     <h4>+ inteligência artificial</h4>
                     <p>
                         A Sociedade está ficando cada vez mais orientada por dados e o uso da Inteligência Artificial está no centro de todo o desenvolvimento da inovação nos diversos setores da economia. Essas estratégias demandam todo um suporte jurídico especializado para análise e viabilidade legal dos projetos de IA considerando aumento do uso de <strong><em>chatbots</em></strong>, drones, <strong><em>machine learning</em></strong>, bases de dados, bem como para verificação de questões relacionadas à transparência e ética de Algoritmos.
@@ -309,7 +315,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-contencioso.jpg" alt="+ contencioso digital"></div>
+                    <div class="img"><img data-aos="fade-up" src="assets/images/atuacao-contencioso.jpg" alt="+ contencioso digital"></div>
                     <h4>+ contencioso digital</h4>
                     <p>
                         Estamos sempre preparados para proteger os clientes dos novos riscos e ameaças digitais, bem como sobre os reflexos do uso de dados nas demandas judiciais e administrativas. Contamos com um time especializado em contencioso digital, com formação técnica e jurídica para análise de provas eletrônicas, para questões ligadas a LGPD, para apoiar desde uma investigação de autoria até combate a uma fraude eletrônica. Quando o incidente ocorre é fundamental agir rápido. Além disso, cada vez mais os departamentos jurídicos precisam basear suas estratégias em legal data para evitar novas ocorrências e otimizar o uso dos recursos.
@@ -324,7 +330,7 @@
                 </div>     
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-marketing.jpg" alt="+ marketing legal digital"></div>
+                    <div class="img"><img data-aos="fade-right" src="assets/images/atuacao-marketing.jpg" alt="+ marketing legal digital"></div>
                     <h4>+ marketing legal digital</h4>
                     <p>
                         As estratégias de comunicação estão cada vez mais sofisticadas e precisam utilizar tecnologia e dados para inovar. Para atender esta necessidade, temos uma equipe especializada nos aspectos legais do uso das mídias digitais para dar todo suporte jurídico às ações de Marketing e Promoção Comercial com respeito aos seus clientes e em conformidade com as leis de proteção de dados.
@@ -340,7 +346,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <div class="img"><img src="assets/images/atuacao-eleicoes.jpg" alt="+ eleições digitais"></div>
+                    <div class="img"><img data-aos="fade-up" src="assets/images/atuacao-eleicoes.jpg" alt="+ eleições digitais"></div>
                     <h4>+ eleições digitais</h4>
                     <p>
                         Atuamos na assessoria jurídica de Eleições Digitais Democráticas, com ações preventivas e medidas para análise de risco e contenção de crise, considerando a necessidade de conformidade às novas regulamentações de Direito Eleitoral e de proteção de dados pessoais e o aumento de utilização de tecnologia tais como urna eletrônica, urna biométrica, mídias sociais, agências de checagem de fatos e combate à fake news.
@@ -355,7 +361,7 @@
                 </div>
 
                 <div class="atuacao-item">
-                    <img src="assets/images/atuacao-grafismo.png" alt="P+">
+                    <img data-aos="fade-right" src="assets/images/atuacao-grafismo.png" alt="P+">
                 </div>
 
             </div>
@@ -367,8 +373,8 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2 id="nav-pessoas">pessoas</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right" id="nav-pessoas">pessoas</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
 
             <div class="olho">
@@ -414,8 +420,8 @@
     <section class="reconhecimento-section">
         <div class="container">
             <div class="titulo-default">
-                <h2>reconhecimento</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right">reconhecimento</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
             <div class="olho">
                 Somos reconhecidos nacional e internacionalmente por nossos clientes e pelas principais publicações especializadas no setor pela excelência e qualidade da atuação de nossos sócios e equipe de profissionais.
@@ -424,35 +430,35 @@
         <div class="corpo">
 
             <div class="selo">
-                <img src="assets/images/reconhec-lawyer.jpg" />
+                <img data-aos="fade-down" data-aos-duration="800" src="assets/images/reconhec-lawyer.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-analise.jpg" />
+                <img data-aos="fade-down" data-aos-duration="300" src="assets/images/reconhec-analise.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-analise2.jpg" />
+                <img data-aos="fade-down" data-aos-duration="500" src="assets/images/reconhec-analise2.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-compliance.jpg" />
+                <img data-aos="fade-down" data-aos-duration="400" src="assets/images/reconhec-compliance.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-escudo.jpg" />
+                <img data-aos="fade-down" data-aos-duration="300" src="assets/images/reconhec-escudo.jpg" />
             </div>
 
             <div class="selo">
-                <img src="assets/images/reconhec-security.jpg" />
+                <img data-aos="fade-down" data-aos-duration="500" src="assets/images/reconhec-security.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-ccep.jpg" />
+                <img data-aos="fade-down" data-aos-duration="800" src="assets/images/reconhec-ccep.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-ghci.jpg" />
+                <img data-aos="fade-down" data-aos-duration="400" src="assets/images/reconhec-ghci.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-isaca.jpg" />
+                <img data-aos="fade-down" data-aos-duration="800" src="assets/images/reconhec-isaca.jpg" />
             </div>
             <div class="selo">
-                <img src="assets/images/reconhec-pecb.jpg" />
+                <img data-aos="fade-down" data-aos-duration="500" src="assets/images/reconhec-pecb.jpg" />
             </div>
 
         </div>
@@ -461,8 +467,8 @@
     <section class="fale-section">
         <div class="container">
             <div class="titulo-default">
-                <h2 id="nav-fale">fale conosco</h2>
-                <div class="grafismo"></div>
+                <h2 data-aos="zoom-out-right" id="nav-fale">fale conosco</h2>
+                <div data-aos="zoom-out-right" class="grafismo"></div>
             </div>
             <div class="corpo">
 
@@ -534,7 +540,7 @@
     <footer>
         <div class="footer1">
             <div class="container">
-                <div class="parte1">
+                <div class="parte1" data-aos="zoom-out-right">
                     SÃO PAULO - SP
                     <br>
                     Av. Paulista, 2222, 7ª andar
@@ -558,11 +564,11 @@
                 </div>
                 <div class="parte2">
                     <ul>
-                        <li><a href="" class="social-footer instagram">instagram</a></li>
-                        <li><a href="" class="social-footer twitter">twitter</a></li>
-                        <li><a href="" class="social-footer facebook">facebook</a></li>
-                        <li><a href="" class="social-footer linkedin">linkedin</a></li>
-                        <li><a href="" class="social-footer email">email</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/peckadvogados/" class="social-footer instagram">instagram</a></li>
+                        <li><a target="_blank" href="" class="social-footer twitter">twitter</a></li>
+                        <li><a target="_blank" href="" class="social-footer facebook">facebook</a></li>
+                        <li><a target="_blank" href="" class="social-footer linkedin">linkedin</a></li>
+                        <li><a target="_blank" href="" class="social-footer email">email</a></li>
                     </ul>
                 </div>
             </div>
@@ -572,6 +578,19 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
-
+    <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.item-slider').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

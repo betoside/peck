@@ -94,18 +94,23 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .idioma a:last-child { margin-left: 10px; }
 .idioma img { width: 52px;}
 
-.slider-area { height: calc(100vh - 143px); background: #0f0;}
-.item-slider { background: url(../images/slider-modelo.jpg) no-repeat center; background-size: cover;height: 100%;}
+.slider-area { height: calc(100vh - 143px); background: var(--verde-padrao);}
+/* .item-slider {} */
+.conteudo-01 {background: url(../images/banner_01.jpg) no-repeat center; }
+.conteudo-02 {background: url(../images/banner_02.jpg) no-repeat center;}
+
+.conteudo-01,
+.conteudo-02 { background-size: cover; height: calc(100vh - 132px); }
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
-.titulo-default { margin-bottom: 60px; }
+.titulo-default { margin-bottom: 60px; overflow: hidden; }
 .titulo-default h2 { font-size: 50px; font-weight: 300; color: var(--verde-padrao);text-transform: uppercase; }
 .titulo-default .grafismo { height: 58px; background: url(../images/titulo-grafismo.png) no-repeat right 0;}
 
 .quem-somos h3,
 .quem-somos p {margin: 0; margin-bottom: 30px;}
 .quem-somos h3 {font-weight: 500;text-transform: uppercase;color: var(--verde-padrao); font-size: 24px;}
-.quem-somos p { font-weight: 400;color: #707070;font-size: 20px; }
+.quem-somos p { font-weight: 400;color: #707070;font-size: 17px; }
 .quem-somos .corpo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -126,14 +131,14 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .valores-corpo .img {min-height: 186px; margin-bottom: 13px;}
 .valores-corpo .img img {max-width: 100%;}
 .valores-corpo h4 {font-size: 19px; color: #1ec8d2; text-transform: uppercase;min-height: 50px; margin-bottom: 10px;font-weight: 600;}
-.valores-corpo p {font-size: 19px; color: #575756; margin-bottom: 38px;font-weight: 300;text-align: justify;margin-bottom: 0;}
+.valores-corpo p {font-size: 15px; color: #575756; margin-bottom: 38px;font-weight: 300;text-align: justify;margin-bottom: 0;}
 
 .atuacao-section { background: url(../images/atuacao-section.jpg) center bottom var(--verde-padrao) no-repeat; background-size:contain; }
 .atuacao-section .container {padding-top: 50px;padding-bottom: 0px;}
 .atuacao-section .titulo-default h2 { color: #fff; }
 .atuacao-section .corpo { display: flex; justify-content: space-between; flex-wrap: wrap; }
 
-.atuacao-item { width: 48%; color: #fff;font-size: 19px;margin-bottom: 65px;}
+.atuacao-item { width: 48%; color: #fff;font-size: 15px;margin-bottom: 65px;}
 .atuacao-item .img {/*height: 196px;*/ margin-bottom: 35px; }
 .atuacao-item .img img {border-left: 23px solid #2ec8d0; max-width: 100%;}
 .atuacao-item h4 {font-size: 24px; color: #1ec8d2; text-transform: uppercase;min-height: 45px; margin-bottom: 11px;font-weight: 600;}
@@ -145,7 +150,7 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .pessoas-section {background: #fff;}
 .pessoas-section .container {padding-top: 86px; padding-bottom: 90px;}
 .pessoas-section .titulo-default { margin-bottom: 40px; }
-.pessoas-section .olho {font-size: 36px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
+.pessoas-section .olho {font-size: 28px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
 .pessoas-section .olho strong {display: inline-block;}
 .pessoas-section .corpo { display: flex; justify-content: center; flex-wrap: wrap; }
 .pessoas-section .corpo .pessoa { width: 33.33%; /*flex-grow: 3;*/ height: 345px; }
@@ -155,7 +160,7 @@ header .container { height: 132px; display: flex; justify-content: space-between
 .reconhecimento-section {background: #fff;}
 .reconhecimento-section .container {padding-top: 86px; }
 .reconhecimento-section .titulo-default { margin-bottom: 40px; }
-.reconhecimento-section .olho {font-size: 36px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 85px;}
+.reconhecimento-section .olho {font-size: 28px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 85px;}
 .reconhecimento-section .olho strong {display: inline-block;}
 .reconhecimento-section .corpo { display: flex; flex-wrap: wrap; max-width: 1100px; margin: 0 auto 150px; }
 .reconhecimento-section .corpo .selo { width: 20%; display: flex;align-items: center; justify-content: center; padding-bottom: 20px;}
