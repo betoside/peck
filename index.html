@@ -10,7 +10,7 @@
     <title>Peck</title>
 </head>
 <body>
-    
+    <div class="botao-topo">></div>
     <header>
         <div class="container">
 
@@ -30,10 +30,10 @@
                             <div class="mm-line"></div>
                         </div>
                         <ul>
-                            <li class="active"><a href="">quem somos</a></li>
-                            <li><a href="">áreas de atuação</a></li>
-                            <li><a href="">equipe</a></li>
-                            <li><a href="">fale conosco</a></li>
+                            <li class="active-"><a class="navegador" href="#nav-quemsomos">quem somos</a></li>
+                            <li><a class="navegador" href="#nav-areas">áreas</a></li>
+                            <li><a class="navegador" href="#nav-pessoas">pessoas</a></li>
+                            <li><a class="navegador" href="#nav-fale">fale conosco</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -65,7 +65,7 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2>Quem Somos</h2>
+                <h2 id="nav-quemsomos">Quem Somos</h2>
                 <div class="grafismo"></div>
             </div>
 
@@ -215,7 +215,7 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2>atuação</h2>
+                <h2 id="nav-areas">áreas</h2>
                 <div class="grafismo"></div>
             </div>
 
@@ -367,7 +367,7 @@
         <div class="container">
 
             <div class="titulo-default">
-                <h2>pessoas</h2>
+                <h2 id="nav-pessoas">pessoas</h2>
                 <div class="grafismo"></div>
             </div>
 
@@ -458,6 +458,120 @@
         </div>
     </section>
 
+    <section class="fale-section">
+        <div class="container">
+            <div class="titulo-default">
+                <h2 id="nav-fale">fale conosco</h2>
+                <div class="grafismo"></div>
+            </div>
+            <div class="corpo">
+
+                <form action="">
+
+                    <div class="box-campo">
+                        <label for="assunto">Assunto *</label> <br>
+                        <select name="assunto">
+                            <option value="">
+                                Fale conosco – Mais informações, agenda de atendimento ou parceria estratégica, entre em contato.
+                            </option>
+                            <option value="">
+                                Carreira – Se você tem o DNA do Direito + Tecnologia + Inovação venha fazer parte do nosso Dream Team! 
+                            </option>
+                            <option value="">
+                                Imprensa – Oportunidades de pautas e entrevistas
+                            </option>
+                        </select>
+                    </div> 
+
+                    <div class="box-inputs">
+                        <div class="box-campo">
+                            <label for="nome">Seu nome *</label> <br>
+                            <input type="text" name="nome" required>
+                        </div> 
+                        <div class="box-campo">
+                            <label for="email">Seu email *</label> <br>
+                            <input type="email" name="email">
+                        </div> 
+                    </div>
+
+                    <div class="box-inputs">
+                        <div class="box-campo">
+                            <label for="telefone">Empresa *</label> <br>
+                            <input type="text" name="empresa" required>
+                        </div> 
+                        <div class="box-campo">
+                            <label for="telefone">Telefone *</label> <br>
+                            <input type="text" name="telefone" required>
+                        </div> 
+                    </div>
+
+                    <div class="box-campo">
+                        <label for="mensagem">Dúvidas | Comentários *</label> <br>
+                        <textarea name="mensagem" class="Montserrat" required></textarea>
+                    </div> 
+
+                    <div class="box-assine-enviar">
+                        <div class="assine">
+                            <p>
+                                Assine a nossa newsletter, receba nossos conteúdos exclusivos e fique por dentro de tudo sobre novidades, eventos e informações.
+                            </p>
+                            <br>
+                            <label for="inscrever">
+                                <input type="checkbox" name="inscrever" id="inscrever"> sim, quero receber.
+                            </label>                            
+                        </div>
+                        <div class="bt-box">
+                            <button>>> Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+                    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer1">
+            <div class="container">
+                <div class="parte1">
+                    SÃO PAULO - SP
+                    <br>
+                    Av. Paulista, 2222, 7ª andar
+                    <br>
+                    São Paulo - SP | CEP: 00000-000
+                </div>
+                <div class="parte2">
+                    <div class="telefone">
+                        +55 11 5555 5555 | +55 11 5555 5555
+                    </div>
+                    <div class="icone">
+                        <img src="assets/images/ico-telefone.png" alt="telefone">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="container">
+                <div class="parte1">
+                    <a href="#">política de privacidade</a>
+                </div>
+                <div class="parte2">
+                    <ul>
+                        <li><a href="" class="social-footer instagram">instagram</a></li>
+                        <li><a href="" class="social-footer twitter">twitter</a></li>
+                        <li><a href="" class="social-footer facebook">facebook</a></li>
+                        <li><a href="" class="social-footer linkedin">linkedin</a></li>
+                        <li><a href="" class="social-footer email">email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
