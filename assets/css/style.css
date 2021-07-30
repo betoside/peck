@@ -112,13 +112,22 @@ header .container {
 .idioma a:last-child { margin-left: 7px; }
 .idioma img { width: 33px;}
 
-.slider-area { height: calc(100vh - 143px); background: var(--verde-padrao);}
+.slider-area { height: calc(100vh - 111px); background: var(--verde-padrao);}
 /* .item-slider {} */
-.conteudo-01 {background: url(../images/banner_01.jpg) no-repeat center; }
+.conteudo-01 { background: url(../images/banner_direito-slider.jpg) no-repeat center; }
+
+    .conteudo-slide {display: flex; justify-content: space-between; align-items: center;}
+    .conteudo-slide div { 
+        width: 45%; height: calc(100vh - 111px);
+        display: flex;align-items: center;
+    }
+
+
+
 .conteudo-02 {background: url(../images/banner_02.jpg) no-repeat center;}
 
 .conteudo-01,
-.conteudo-02 { background-size: cover; height: calc(100vh - 132px); }
+.conteudo-02 { background-size: cover; height: calc(100vh - 111px); }
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
 .titulo-default { margin-bottom: 60px; overflow: hidden; }
