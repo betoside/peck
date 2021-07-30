@@ -211,7 +211,7 @@ header .container {
 .box-assine-enviar .assine { font-size: 18px; color: #575756; width: 60%; }
 .box-assine-enviar .bt-box { width: 30%; display: flex; justify-content: flex-end; align-items: center; }
 
-.footer1 { background: #2ec8d0; padding: 25px 0; }
+.footer1 { background: #2ec8d0; padding: 13px 0; }
 .footer1 .container { display: flex; justify-content: space-between; padding: 0 60px; }
 .footer1 .parte1,
 .footer1 .parte2 { width: 48%; }
@@ -220,11 +220,11 @@ header .container {
     font-size: 18px; color: #000; font-weight: 400; display: flex; align-items: center; 
     display: flex;justify-content: flex-end;
 }
-.footer1 .parte2 .icone { margin-left: 40px; }
-.footer1 .parte2 .icone img { margin-top: -140px; }
+.footer1 .parte2 .icone { margin-left: 15px; }
+.footer1 .parte2 .icone img { margin-top: -135px; }
 
 
-.footer2 { background: var(--verde-padrao); padding: 35px 0; }
+.footer2 { background: var(--verde-padrao); padding: 30px 0; }
 .footer2 .container { display: flex; justify-content: space-between; padding: 0 60px; }
 .footer2 .parte1,
 .footer2 .parte2 { width: 48%; }
