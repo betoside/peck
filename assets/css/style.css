@@ -187,9 +187,11 @@ header .container {
 .pessoas-section .olho {font-size: 28px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
 .pessoas-section .olho strong {display: inline-block;}
 .pessoas-section .corpo { display: flex; justify-content: center; flex-wrap: wrap; }
-.pessoas-section .corpo .pessoa { width: 33.33%; /*flex-grow: 3;*/ height: 345px; }
+.pessoas-section .corpo .pessoa { width: 33.33%; /*flex-grow: 3;*/ height: 345px; position: relative; cursor: pointer; }
 .pessoas-section .corpo .pessoa img {max-width: 100%;}
 
+    .pessoa .img-over { position: absolute; left: 0; top: 0; width: 100%;height: 100%; }
+    .pessoa:hover .img-over { visibility: hidden; }
 
 .reconhecimento-section {background: #fff;}
 .reconhecimento-section .container {padding-top: 86px; }
