@@ -8,8 +8,10 @@
     <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>    
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css?112">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;600&display=swap" rel="stylesheet">
     <title>Peck</title>
 </head>
 <body>
@@ -65,15 +67,45 @@
 
     <section class="slider-area">
         <div class="item-slider">
-            <div class="conteudo-01">
-                <div class="conteudo-slide">
+
+            <div class="exibir-slide">
+                <div class="conteudo-slide conteudo-01">
                     <div></div>
                     <div><img src="assets/images/banner_direito-msg.png" alt="Direito + Tecnologia + Inovação"></div>
                 </div>
             </div>
-            <!-- <div class="conteudo-02"></div> -->
+            <div class="exibir-slide">
+                <div class="exibir-slide conteudo-slide-dreamTeam">
+        
+                    <div class="camiseta">
+                        <a href="">
+                            <img src="assets/images/banner_time_camiseta.png" alt="">
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <a href="">
+                            <img src="assets/images/ico-plus.png" alt="">
+                            <div class="titulo antonio">
+                                Faça parte 
+                                <br> 
+                                do nosso 
+                                <br> 
+                                Dream Team!
+                            </div>
+                            <div class="motivo antonio-">
+                                Se você é apaixonado por Direito, Tecnologia e Inovação, se você é movido a desafios, se a sua inspiração vem de querer quebrar paradigmas, gosta de trabalhar em equipe e buscar soluções para problemas complexos, venha fazer parte do nosso time!
+                            </div>
+                        </a>
+                    </div>        
+                    
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!-- <section class="templates">
+    </section> -->
 
     <section class="quem-somos">
         <div class="container">
@@ -592,7 +624,9 @@
             $('.item-slider').slick({
                 dots: true,
                 arrows: false,
-                autoplay: true
+                autoplay: true,
+                autoplaySpeed: 12000,
+                fade: true
             });
         });
     </script>

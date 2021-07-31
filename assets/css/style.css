@@ -5,9 +5,11 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Montserrat', sans-serif; font-size: 13px; }
 .Montserrat { font-family: 'Montserrat', sans-serif; }
+.antonio { font-family: 'Antonio', sans-serif; }
 .dn { display: none; }
 .ttu { text-transform: uppercase; }
 .container { max-width: 1110px; padding: 0 20px; margin: 0 auto; }
+
 p {line-height: 150%;}
 
 header { background-color: var(--verde-padrao); color: #1ec8d2; }
@@ -113,21 +115,26 @@ header .container {
 .idioma img { width: 33px;}
 
 .slider-area { height: calc(100vh - 111px); background: var(--verde-padrao);}
-/* .item-slider {} */
-.conteudo-01 { background: url(../images/banner_direito-slider.jpg) no-repeat center; }
+.exibir-slide { background-size: cover; height: calc(100vh - 111px); }
+.conteudo-slide {display: flex; justify-content: space-between; align-items: center;}
 
-    .conteudo-slide {display: flex; justify-content: space-between; align-items: center;}
+    .conteudo-01 { background: url(../images/banner_direito-slider.jpg) no-repeat center; }
     .conteudo-slide div { 
         width: 45%; height: calc(100vh - 111px);
         display: flex;align-items: center;
     }
 
+    .conteudo-slide-dreamTeam { 
+        background: url(../images/banner_time.jpg) no-repeat center; background-size: cover; 
+        display: flex; justify-content: center; align-items: center;
+    }
+    .conteudo-slide-dreamTeam a { text-decoration: none; color: var(--verde-padrao); }
+    .conteudo-slide-dreamTeam .camiseta img { max-width: 100%; max-height: calc(100vh - 111px); }
+    .conteudo-slide-dreamTeam .texto { color: var(--verde-padrao); max-width: 420px; }
+    .conteudo-slide-dreamTeam .texto .titulo { font-weight: 600; padding: 0 50px 0; margin-bottom: 15px; font-size: 55px; }
+    .conteudo-slide-dreamTeam .texto .motivo { font-weight: 400; padding: 0 50px 50px; font-size: 20px; }
 
 
-.conteudo-02 {background: url(../images/banner_02.jpg) no-repeat center;}
-
-.conteudo-01,
-.conteudo-02 { background-size: cover; height: calc(100vh - 111px); }
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
 .titulo-default { margin-bottom: 60px; overflow: hidden; }
