@@ -25,7 +25,7 @@ $(function(){
          return false;
     });
 
-    // document.querySelector('.menu-mobile').addEventListener('click',()=>{
+    // document.querySelector('.menuMobile').addEventListener('click',()=>{
     //     if (document.querySelector('.main-nav').style.display == 'flex') {
     //         document.querySelector('.main-nav').style.display = 'none';
     //     } else {
