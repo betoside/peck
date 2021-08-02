@@ -25,13 +25,13 @@ $(function(){
          return false;
     });
 
-    // document.querySelector('.menuMobile').addEventListener('click',()=>{
-    //     if (document.querySelector('.main-nav').style.display == 'flex') {
-    //         document.querySelector('.main-nav').style.display = 'none';
-    //     } else {
-    //         document.querySelector('.main-nav').style.display = 'flex';
-    //     }
-    // });
+    document.querySelector('.menu-mobile').addEventListener('click',()=>{
+        if (document.querySelector('.nav-main').style.display == 'flex') {
+            document.querySelector('.nav-main').style.display = 'none';
+        } else {
+            document.querySelector('.nav-main').style.display = 'flex';
+        }
+    })
 
 });
 

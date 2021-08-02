@@ -27,7 +27,7 @@ Antonio
 
 p {line-height: 150%;}
 
-header { background-color: var(--verde-escuro); color: #1ec8d2; }
+header { background-color: var(--verde-escuro); color: #1ec8d2;  position: relative; z-index: 1;}
 header .container { 
     display: flex; justify-content: space-between; align-items: center;
     height: 100px; padding: 10px 40px 0;
@@ -65,11 +65,20 @@ header .container {
 
 .logo { width: 220px; }
 .logo img { max-width: 100%; }
+.peck-desktop { display: block; }
+.peck-mobile { display: none; }
 
 .navegacao { display: flex;align-items: center; padding-top: 20px;}
 
-.menuMobile { display: none; width: 40px; height: 40px; margin-top: 40px; margin-bottom: 40px; margin-right: 20px; }
-.mm-line { height: 3px; background-color: var(--azul-claro); }
+.menu-mobile {
+    width: 35px;
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-right: 0;
+    display: none;
+}
+.mm-line { height: 3px; background-color: var(--verde-claro); }
 
 .menu ul,
 .menu li {list-style: none;}
@@ -166,6 +175,20 @@ header .container {
         display: flex; justify-content: center; align-items: center;
         background-size: cover;
     }
+
+    .banner_lgpd3 { 
+        background: url(../images/banner_lgpd3.jpg) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+
+    .banner_time3 { 
+        background: url(../images/banner_time3.jpg) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+
+    
 
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
@@ -509,6 +532,45 @@ section.fale-section {display: block;}
 
 
 @media (max-width:760px) {
+
+    .logo {
+        width: auto;
+    }
+    .menu-mobile {
+        display: block; margin-left: 20px;
+        display: flex; flex-direction: column; justify-content: space-around;
+    }
+    .nav-main {
+        position: absolute; left: 0; top: 110px; padding: 10px 0 10px 20px;
+        background: #fff; width: 100%; display: flex; flex-direction: column;
+        display: none;
+    }
+    .menu {
+        order: 1;
+    }
+    .menu li {
+        padding: 5px 0 5px 10px;
+        border-top: 1px solid var(--verde-escuro);
+        margin-right: 25px;
+    }    
+    .menu li:first-child {
+        padding-left: 10px;
+        border: none;
+    }
+    .menu li a {
+        color: var(--verde-escuro);
+        font-weight: 600;
+
+        background: url(../images/ico-plus-claro.png) no-repeat 0 center;
+        background-size: 10px;
+        padding-left: 20px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .idioma {
+        margin-left: 21px;
+    }
 
     .titulo-default {
         margin-bottom: 40px;
