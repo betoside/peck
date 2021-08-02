@@ -1,18 +1,33 @@
 
 :root {
-    --verde-padrao: #004d59;
+    --verde-escuro: #004d59;
+    --verde-claro: #1ec8d2;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Montserrat', sans-serif; font-size: 13px; }
+
+.montserrat,
 .Montserrat { font-family: 'Montserrat', sans-serif; }
 .antonio { font-family: 'Antonio', sans-serif; }
+/* 
+Montserrat
+    300
+    400
+    500
+    600
+    700
+
+Antonio
+    300
+    600
+ */
 .dn { display: none; }
 .ttu { text-transform: uppercase; }
 .container { max-width: 1110px; padding: 0 20px; margin: 0 auto; }
 
 p {line-height: 150%;}
 
-header { background-color: var(--verde-padrao); color: #1ec8d2; }
+header { background-color: var(--verde-escuro); color: #1ec8d2; }
 header .container { 
     display: flex; justify-content: space-between; align-items: center;
     height: 100px; padding: 10px 40px 0;
@@ -27,7 +42,7 @@ header .container {
 
 .botao-topo {
     background: #2ec8d0;
-    color: var(--verde-padrao); font-weight: bold; font-size: 20px;
+    color: var(--verde-escuro); font-weight: bold; font-size: 20px;
     position: fixed; right: 0; top: 10vh; width: 0; height: 40px;
     display: flex; justify-content: center; align-items: center;
     overflow-x:hidden; cursor: pointer; z-index: 1;
@@ -104,7 +119,7 @@ header .container {
 .idioma a:last-child { margin-left: 7px; }
 .idioma img { width: 33px;}
 
-.slider-area { height: calc(100vh - 111px); background: var(--verde-padrao);}
+.slider-area { height: calc(100vh - 111px); background: var(--verde-escuro);}
 .exibir-slide { background-size: cover; height: calc(100vh - 111px); }
 
     .conteudo-slide {display: flex; justify-content: space-between; align-items: center;}
@@ -118,9 +133,9 @@ header .container {
         background: url(../images/banner_time.jpg) no-repeat center; background-size: cover; 
         display: flex; justify-content: center; align-items: center;
     }
-    .conteudo-slide-dreamTeam a { text-decoration: none; color: var(--verde-padrao); }
+    .conteudo-slide-dreamTeam a { text-decoration: none; color: var(--verde-escuro); }
     .conteudo-slide-dreamTeam .camiseta img { max-width: 100%; max-height: calc(100vh - 111px); }
-    .conteudo-slide-dreamTeam .texto { color: var(--verde-padrao); max-width: 420px; }
+    .conteudo-slide-dreamTeam .texto { color: var(--verde-escuro); max-width: 420px; }
     .conteudo-slide-dreamTeam .texto .titulo { font-weight: 600; padding: 0 50px 0; margin-bottom: 15px; font-size: 55px; }
     .conteudo-slide-dreamTeam .texto .motivo { font-weight: 400; padding: 0 50px 50px; font-size: 20px; }
 
@@ -137,12 +152,12 @@ header .container {
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
 .titulo-default { margin-bottom: 60px; overflow: hidden; }
-.titulo-default h2 { font-size: 43px; font-weight: 300; color: var(--verde-padrao);text-transform: uppercase; }
+.titulo-default h2 { font-size: 43px; font-weight: 300; color: var(--verde-escuro);text-transform: uppercase; }
 .titulo-default .grafismo { height: 58px; background: url(../images/titulo-grafismo.png) no-repeat right 0;}
 
 .quem-somos h3,
 .quem-somos p {margin: 0; margin-bottom: 30px;}
-.quem-somos h3 {font-weight: 500;text-transform: uppercase;color: var(--verde-padrao); font-size: 24px;}
+.quem-somos h3 {font-weight: 500;text-transform: uppercase;color: var(--verde-escuro); font-size: 24px;}
 .quem-somos p { font-weight: 400;color: #707070;font-size: 17px; }
 .quem-somos .corpo {
     display: grid;
@@ -161,7 +176,7 @@ header .container {
 .valores-section { background: url(../images/section-valores.jpg) no-repeat center; background-size: contain; }
 .valores-section .container {padding-top: 50px;padding-bottom: 110px; }
 .valores-corpo {display: flex; flex-wrap: wrap; /*margin: 0 -15px;*/ justify-content: space-between; }
-.valores-corpo .valor-item {border: 1px solid var(--verde-padrao);padding: 30px 25px 20px;width: 32%;/*margin: 15px;*/ margin-bottom: 30px; background: #fff;}
+.valores-corpo .valor-item {border: 1px solid var(--verde-escuro);padding: 30px 25px 20px;width: 32%;/*margin: 15px;*/ margin-bottom: 30px; background: #fff;}
 .valores-corpo .img {min-height: 186px; margin-bottom: 13px;}
 .valores-corpo .img img {max-width: 100%;}
 .valores-corpo h4 {font-size: 19px; color: #1ec8d2; text-transform: uppercase;min-height: 50px; margin-bottom: 10px;font-weight: 600;}
@@ -184,19 +199,77 @@ header .container {
 .pessoas-section {background: #fff;}
 .pessoas-section .container {padding-top: 86px; padding-bottom: 90px;}
 .pessoas-section .titulo-default { margin-bottom: 40px; }
-.pessoas-section .olho {font-size: 28px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
+.pessoas-section .olho {font-size: 28px; color: var(--verde-escuro);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
 .pessoas-section .olho strong {display: inline-block;}
 .pessoas-section .corpo { display: flex; justify-content: center; flex-wrap: wrap; }
-.pessoas-section .corpo .pessoa { width: 33.33%; /*flex-grow: 3;*/ height: 345px; position: relative; cursor: pointer; }
+.pessoas-section .corpo { position: relative; }
+
+.pessoas-section .corpo .pessoa { width: 33.33%; height: 345px; position: relative; cursor: pointer; }
 .pessoas-section .corpo .pessoa img {max-width: 100%;}
+.pessoas-section .corpo .pessoa { display: flex; flex-direction: column; justify-content: space-between; }
+.pessoas-section .corpo .pessoa .ico-plus { padding-top: 18px; padding-left: 18px; flex: 1; }
+.pessoas-section .corpo .pessoa .ico-plus img { width: 35px; }
+.pessoas-section .corpo .pessoa .nome-conhecimento { text-align: center; color: #fff;}
+.pessoas-section .corpo .pessoa .nome-conhecimento .nome { font-size: 33px; padding-bottom: 2px; }
+.pessoas-section .corpo .pessoa .nome-conhecimento .conhecimento { font-size: 15px; padding-bottom: 15px; }
+
+    .pessoas-section .corpo .pessoa .nome-conhecimento .nome,
+    .pessoas-section .corpo .pessoa .nome-conhecimento .conhecimento {
+        text-shadow: 1px 1px 2px #000;
+    }
 
     .pessoa .img-over { position: absolute; left: 0; top: 0; width: 100%;height: 100%; }
+    .pessoa-active .img-over,
     .pessoa:hover .img-over { visibility: hidden; }
+
+    .pessoas-section .corpo .advogado-box-detalhe { position: absolute; z-index: 1; top: 25px;}
+    .pessoas-section .corpo .advogado-box-detalhe { display: none; }
+    .advogado-box-detalhe { 
+        max-width: 830px; 
+        background: no-repeat left bottom rgba(0, 0, 0, 0.9); 
+        background-size: 45%;
+    }    
+        .advogado-box-detalhe .advogado-foto { 
+            padding: 0px 25px 0 25px;
+            display: flex; 
+        }
+    .advogado-box-detalhe .bt-fechar { text-align: right; padding: 20px 20px 0 0; }
+    .advogado-box-detalhe .bt-fechar .btn-x { display: inline-block; padding: 5px; border: 2px solid var(--verde-claro); color: var(--verde-claro); font-weight: 700; text-decoration: none; }
+    .advogado-box-detalhe .advogado-foto .nome-conhecimento { width: 48%; padding-bottom: 500px; padding-left: 30px; padding-right: 15px; }
+    .advogado-box-detalhe .advogado-foto .nome-conhecimento .ico-plus { width: 30px; margin-left: -30px; }
+    .advogado-box-detalhe .advogado-foto .nome-conhecimento .ico-plus img { max-width: 100%; }
+    .advogado-box-detalhe .advogado-foto .nome-conhecimento .nome { font-size: 38px; color: var(--verde-claro); margin-top: -15px; }
+    .advogado-box-detalhe .advogado-foto .nome-conhecimento .conhecimento { font-size: 15px; color: #fff; font-weight: 600; }
+    .advogado-box-detalhe .advogado-foto .curriculo { width: 52%; color: #fff; font-size: 13px; padding-left: 10px; padding-top: 26px; padding-bottom: 20px; }
+    .advogado-box-detalhe .advogado-foto .curriculo p { margin-bottom: 20px; }
+    
+        .adv-01-patricia { background-image: url(../images/adv-01-patricia.png); }
+        .adv-02-antonio { background-image: url(../images/adv-02-antonio.png); }
+        .adv-03-caroline { background-image: url(../images/adv-03-caroline.png); }
+        .adv-03-caroline .advogado-foto .nome-conhecimento { padding-bottom: 520px; }
+    
+        .adv-04-henrique { background-image: url(../images/adv-04-henrique.png); }
+        .adv-04-henrique .advogado-foto .nome-conhecimento { padding-bottom: 470px; }
+    
+        .adv-05-leandro { background-image: url(../images/adv-05-leandro.png); }
+        .adv-05-leandro .advogado-foto .nome-conhecimento { padding-bottom: 480px; }
+    
+        .adv-06-leticia { background-image: url(../images/adv-06-leticia.png); }
+    
+        .adv-07-lorena { background-image: url(../images/adv-07-lorena.png); }
+        .adv-07-lorena .advogado-foto .nome-conhecimento { padding-bottom: 460px; }
+    
+        .adv-08-marcelo { background-image: url(../images/adv-08-marcelo.png); }
+        .adv-08-marcelo .advogado-foto .nome-conhecimento { padding-bottom: 470px; }
+    
+        .adv-09-sandra { background-image: url(../images/adv-09-sandra.png); }
+        .adv-09-sandra .advogado-foto .nome-conhecimento { padding-bottom: 420px; }
+
 
 .reconhecimento-section {background: #fff;}
 .reconhecimento-section .container {padding-top: 86px; }
 .reconhecimento-section .titulo-default { margin-bottom: 40px; }
-.reconhecimento-section .olho {font-size: 28px; color: var(--verde-padrao);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 85px;}
+.reconhecimento-section .olho {font-size: 28px; color: var(--verde-escuro);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 85px;}
 .reconhecimento-section .olho strong {display: inline-block;}
 .reconhecimento-section .corpo { display: flex; flex-wrap: wrap; max-width: 1100px; margin: 0 auto 150px; }
 .reconhecimento-section .corpo .selo { width: 20%; display: flex;align-items: center; justify-content: center; padding-bottom: 20px;}
@@ -212,7 +285,7 @@ header .container {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    color: var(--verde-padrao);
+    color: var(--verde-escuro);
 }
 .box-campo textarea { height: 140px; }
 .bt-box button { background: #2ec8d0; color: #fff; text-transform: uppercase; font-size: 34px; padding: 10px 20px; border: none; cursor: pointer; }
@@ -239,7 +312,7 @@ header .container {
 .footer1 .parte2 .icone img { margin-top: -135px; }
 
 
-.footer2 { background: var(--verde-padrao); padding: 30px 0; }
+.footer2 { background: var(--verde-escuro); padding: 30px 0; }
 .footer2 .container { display: flex; justify-content: space-between; padding: 0 60px; }
 .footer2 .parte1,
 .footer2 .parte2 { width: 48%; }
@@ -285,7 +358,6 @@ header .container {
 .social-footer.linkedin:hover { background-position: -96px 0px;}
 .social-footer.email:hover { background-position: -142px 0px;}
 
-
 /* 
 section { display: none; }
 section.slider-area,
@@ -297,3 +369,4 @@ section.pessoas-section,
 section.reconhecimento-section,
 section.fale-section {display: block;}
  */
+
