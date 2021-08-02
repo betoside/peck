@@ -306,7 +306,7 @@ header .container {
     color: var(--verde-escuro);
 }
 .box-campo textarea { height: 140px; }
-.bt-box button { background: #2ec8d0; color: #fff; text-transform: uppercase; font-size: 34px; padding: 10px 20px; border: none; cursor: pointer; }
+.bt-box button { background: #2ec8d0; color: #fff; text-transform: uppercase; font-size: 30px; padding: 10px 20px; border: none; cursor: pointer; }
 .bt-box button:hover { background: #30999e; }
 
 
@@ -388,3 +388,274 @@ section.reconhecimento-section,
 section.fale-section {display: block;}
  */
 
+
+@media (max-width:1024px) {
+    
+    .peck-desktop { display: none; }
+    .peck-mobile { display: block; }
+    .logo { width:126px; }
+
+    .titulo-default h2 { font-size: 39px; }
+    .reconhecimento-section .corpo .selo { width: 33%; padding-left: 50px; padding-right: 50px; padding-bottom: 0px; padding-top: 50px; }
+    .titulo-default .grafismo { height: 36px; background-image: url(../images/titulo-grafismo-1024.png); }
+
+    .quem-somos h3 {
+        font-size: 20px;
+    }
+    .quem-somos p {
+        font-size: 15px;
+    }
+
+    .visao-section .corpo {
+        font-size: 25px;
+    }
+    .visao-section .corpo p {
+        margin-bottom: 40px;
+    }
+    .visao-section .container {
+        padding-bottom: 130px;
+    }
+
+    .valores-corpo h4 {
+        font-weight: 500;
+    }
+    .valores-section .container {
+        padding-bottom: 70px;
+    }
+
+    .atuacao-item h4 {
+        font-size: 20px;
+    }
+    .pessoas-section .olho {
+        font-size: 23px;
+    }
+    .pessoas-section .container {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .reconhecimento-section .container {
+        padding-top: 70px;
+    }
+
+    .reconhecimento-section .olho {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    header .container {
+        padding: 10px 15px 0;
+    }
+    .logo {
+        width: 115px;
+    }
+
+    .menu li {
+        padding: 0 5px;
+    }
+    .menu li a {
+        font-size: 12px;
+    }
+
+    .idioma {
+        margin-left: 17px;
+    }
+    .idioma img {
+        width: 27px;
+    }
+
+    .valores-corpo .img {
+        min-height: 110px;
+    }
+
+    .valores-corpo h4 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+    .atuacao-item h4 {
+        font-size: 18px;
+    }
+    .atuacao-item {
+        font-size: 14px;
+    }
+
+    .pessoas-section .corpo .advogado-box-detalhe {
+        margin: 10px;
+    }
+
+    .bt-box button {
+        font-size: 25px;
+    }
+
+    .footer1 .parte1 {
+        font-size: 16px;
+        width: 55%;
+    }
+    .footer1 .parte2 {
+        width: 40%;
+    }
+
+    .footer2 .parte1{
+        padding-top: 6px;
+    }
+
+}
+
+
+@media (max-width:760px) {
+
+    .titulo-default {
+        margin-bottom: 40px;
+    }
+    .quem-somos {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .quem-somos .corpo {
+        grid-template-columns: 1fr;
+    }
+    .quem-somos h3, .quem-somos p {
+        margin-bottom: 20px;
+        grid-gap: 0px;
+    }
+
+    .quem-somos .grafismo {
+        flex-direction: column;
+    }
+    .visao-section .corpo {
+        font-size: 19px;
+    }
+    .valores-corpo .valor-item {
+        width: 100%;
+    }
+    .valores-corpo .img {
+        margin-bottom: 35px;
+    }
+    .valores-corpo .img img {
+        max-width: 91%;
+    }
+    .valores-corpo h4 {
+        font-size: 18px;
+    }
+    .valores-corpo p {
+        font-size: 17px;
+    }
+
+    .atuacao-item {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .pessoas-section .olho {
+        padding: 0 40px;
+        margin-bottom: 30px;
+    }
+    .pessoas-section .corpo .pessoa {
+        width: 100%;
+        height: 345px;
+        position: relative;
+        cursor: pointer;
+    }
+    .pessoas-section .corpo .advogado-box-detalhe {
+        padding-bottom: 380px;
+        background-size: 75%;
+    }
+    .advogado-box-detalhe .advogado-foto {
+        flex-direction: column;
+    }
+    .advogado-box-detalhe .advogado-foto .nome-conhecimento {
+        padding-bottom: 0px;
+        width: 100%;
+    }
+    .advogado-box-detalhe .advogado-foto .curriculo {
+        font-size: 15px;
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    .titulo-default h2 {
+        font-size: 27px;
+    }
+
+    .reconhecimento-section .olho {
+        font-size: 18px;
+        padding: 0 0px;
+    }
+    .reconhecimento-section .corpo .selo {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .box-inputs {
+        display: block;
+        justify-content: unset;
+    }
+    .box-inputs .box-campo {
+        width: 100%;
+    }
+    .box-assine-enviar {        
+        display: block;
+        justify-content: unset;
+    }
+    .box-assine-enviar .assine {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .box-assine-enviar .bt-box {
+        width: 100%;
+        display: block;
+    }
+    .bt-box button {
+        width: 100%;
+    }
+   
+    .footer1 .container {
+        justify-content: unset;
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .footer1 .parte1 {
+        width: 100%;
+        margin-bottom: 90px;
+    }
+    .footer1 .parte2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer2 .container {
+        justify-content: unset;
+        display: block;
+        padding: 0 20px;
+    }
+    .footer2 .parte1 {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer2 .parte1 {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer2 .parte2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+
+}
