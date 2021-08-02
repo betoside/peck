@@ -143,11 +143,29 @@ header .container {
     .banner_lgpd { 
         background: url(../images/banner_lgpd.jpg) no-repeat center;
         display: flex; justify-content: center; align-items: center;
+        background-size: cover;
     }
     .banner_lgpd .parte1,
     .banner_lgpd .parte2 { width: 50%; padding: 20px; }
     .banner_lgpd .parte1 { display: flex;justify-content: center;}
     .banner_lgpd .parte1 img { max-width: 100%; max-height: calc(100vh - 111px); }
+
+
+    .banner_lgpd2 { 
+        background: url(../images/banner_lgpd2_bg.jpg) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+    .banner_lgpd2 .parte1 { width: 50%; padding: 20px; }
+    .banner_lgpd2 .parte1 { display: flex;justify-content: center;}
+    .banner_lgpd2 .parte1 img { max-width: 100%; max-height: calc(100vh - 111px); }
+
+
+    .banner-DreamTeam { 
+        background: url(../images/banner-DreamTeam-bg.jpeg) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
 
 
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
