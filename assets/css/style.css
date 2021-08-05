@@ -576,6 +576,9 @@ section.fale-section {display: block;}
 
     .idioma {
         margin-left: 15px;
+        position: absolute;
+        right: 15px;
+        top: 14px;
     }
     .idioma img {
         width: 21px;
