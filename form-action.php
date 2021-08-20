@@ -1,6 +1,19 @@
 <?php
+session_start();
 
 if (isset($_POST['nome']) && !empty($_POST['nome'])) {
+    $_SESSION['msgResposta'] = array();
+
+    $pagina = $_POST['pagina'];
+    if ($pagina == "index.html") {
+        $_SESSION['msgResposta'] = ["Ok, sua mensagem foi enviada. <br> Muito obrigado."];
+    }
+    if ($pagina == "index_en.html") {
+        $_SESSION['msgResposta'] = ["Okay, your message has been sent. <br> Thank you."];
+    }
+    if ($pagina == "index_es.html") {
+        $_SESSION['msgResposta'] = ["De acuerdo, su mensaje ha sido enviado. <br> muchas gracias."];
+    }
 
     $assunto = addslashes($_POST['assunto']); // Fale Conosco, Carreira, Imprensa
     if ($assunto == 'Fale Conosco') {
@@ -14,7 +27,7 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
     }
 
     $nome = addslashes($_POST['nome']);
-    $email = addslashes($_POST['email']);   
+    $emailFromForm = addslashes($_POST['email']);   
     $empresa = addslashes($_POST['empresa']);
     $telefone = addslashes($_POST['telefone']);
 
@@ -31,7 +44,7 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
     $preview = "";
     $preview =  '<strong>Assunto</strong>: '.$assunto. "<br><br>"   .
                 '<strong>Nome</strong>: '.$nome. "<br><br>" .
-                '<strong>Email</strong>: '.$email. "<br><br>" .
+                '<strong>Email</strong>: '.$emailFromForm. "<br><br>" .
                 '<strong>Email Para</strong>: '.$email_to. "<br><br>" .
                 '<strong>Empresa</strong>: '.$empresa. "<br><br>" .
                 '<strong>Telefone</strong>: '.$telefone. "<br><br>" .
@@ -42,20 +55,39 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
 
     $msg =  '<strong>Assunto</strong>: '.$assunto. "<br><br>"   .
                 '<strong>Nome</strong>: '.$nome. "<br><br>" .
-                '<strong>Email</strong>: '.$email. "<br><br>" .
+                '<strong>Email</strong>: '.$emailFromForm. "<br><br>" .
                 '<strong>Empresa</strong>: '.$empresa. "<br><br>" .
                 '<strong>Telefone</strong>: '.$telefone. "<br><br>" .
                 '<strong>Newsletter</strong>: '.$assinar. "<br><br>" .
                 '<strong>Mensagem</strong>: <br>'.$mensagem;
 
     // contato@peckadv.com.br
-
+    $emailsender = "developer@peck.law";
+    $quebra_linha = "\r\n";
     $assunto = "Contato do site: " . $assunto;
-    $headers = "FROM: ".$email."\r\n".
-                "X-Mailer: PHP/".phpversion();
+
+        $headers = "MIME-Version: 1.1\r\n";
+        $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+        $headers .= "X-Mailer: PHP/".phpversion();
+        $headers .= "From: ".$emailsender."\r\n"; // remetente
+        $headers .= "Return-Path: ".$emailsender."\r\n"; // return-path
+        $headers .= "Reply-To: ".$emailFromForm."\r\n";
+        // $envio = mail("destinatario@algum-email.com", "Assunto", "Texto", $headers);
+        // if($envio)
+        //     echo "Mensagem enviada com sucesso";
+        // else
+        //     echo "A mensagem não pode ser enviada";
+
+
+        // TESTE EMAIL FORMATO HTML
+        // $email_to = "developer@peck.law";
 
     try {
-        $mail($email_to, $assunto, $msg, $headers);
+        // $mail($email_to, $assunto, $msg, $headers);
+        if(!mail($email_to, $assunto, $msg, $headers ,"-r".$emailsender)){ // Se for Postfix
+            // $headers .= "Return-Path: " . $emailsender . $quebra_linha; // Se "não for Postfix"
+            mail($email_to, $assunto, $msg, $headers );
+        }
         header("Location: index.html?Email_success=1");
     } catch (\Throwable $th) {
         header("Location: index.html?Email_Error=1");
@@ -65,7 +97,7 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
     // exit;
 
 
-// Quarta feira, 4 de agosto.
+// Quinta feira, 12 de agosto.
 
 // Sol, temperatura alta durante o dia.
 

@@ -133,6 +133,7 @@ header .container {
 
     .conteudo-slide {display: flex; justify-content: space-between; align-items: center;}
     .conteudo-01 { background: url(../images/banner_direito-slider.jpg) no-repeat center; }
+    .conteudo-01 div img { max-width: 100%; }
     .conteudo-slide div { 
         width: 45%; height: calc(100vh - 111px);
         display: flex;align-items: center;
