@@ -260,6 +260,17 @@ header .container {
         text-shadow: 1px 1px 2px #000;
     }
 
+
+        .dream-team-header { text-align: center; padding: 30px; }
+        .dream-team-header span { display: inline-block; font-size: 27px; color: var(--verde-escuro); text-transform: uppercase; }
+        .dream-team-header span img { width: 33px; }
+
+        .pessoas-section .corpo-dream-team .pessoa { width: 20%; height: 211px; }
+        .pessoas-section .corpo-dream-team .pessoa .nome-conhecimento .nome { font-size: 18px; }
+        .pessoas-section .corpo-dream-team .pessoa .nome-conhecimento .conhecimento { font-size: 11px; }
+
+
+
     .pessoa .img-over { position: absolute; left: 0; top: 0; width: 100%;height: 100%; }
     .pessoa-active .img-over,
     .pessoa:hover .img-over { visibility: hidden; }
@@ -284,6 +295,18 @@ header .container {
     .advogado-box-detalhe .advogado-foto .nome-conhecimento .conhecimento { font-size: 15px; color: #fff; font-weight: 600; }
     .advogado-box-detalhe .advogado-foto .curriculo { width: 52%; color: #fff; font-size: 13px; padding-left: 10px; padding-top: 26px; padding-bottom: 20px; }
     .advogado-box-detalhe .advogado-foto .curriculo p { margin-bottom: 20px; }
+        
+        
+        .corpo-dream-team .advogado-box-detalhe { padding-bottom: 30px; }
+        .corpo-dream-team .advogado-foto { display: flex; }
+        .corpo-dream-team .advogado-foto img { max-width: 100%; }
+        .corpo-dream-team .advogado-foto .foto { width: 225px; }
+        .corpo-dream-team .advogado-foto .informacoes { flex: 1; padding-left: 27px; }
+        .corpo-dream-team .advogado-foto .informacoes .nome-conhecimento { padding-bottom: 0; width: 100%; }
+        .corpo-dream-team .advogado-foto .informacoes .nome-conhecimento .nome { font-size: 20px; }
+        .corpo-dream-team .advogado-foto .informacoes .nome-conhecimento .conhecimento { font-size: 13px; }
+        .corpo-dream-team .advogado-foto .informacoes .curriculo { width: 100%; font-size: 12px; padding-left: 30px; }
+
     
         .adv-01-patricia { background-image: url(../images/adv-01-patricia.png); }
         .adv-02-antonio { background-image: url(../images/adv-02-antonio.png); }
