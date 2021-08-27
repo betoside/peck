@@ -269,6 +269,13 @@ header .container {
         .pessoas-section .corpo-dream-team .pessoa .nome-conhecimento .nome { font-size: 18px; }
         .pessoas-section .corpo-dream-team .pessoa .nome-conhecimento .conhecimento { font-size: 11px; }
 
+        /* background dream-team */
+        .pessoas-section .corpo-dream-team .pessoa,
+        .pessoas-section .corpo-dream-team .img-over {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -3px;
+        }
 
 
     .pessoa .img-over { position: absolute; left: 0; top: 0; width: 100%;height: 100%; }
