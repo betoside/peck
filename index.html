@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>    
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="assets/css/style.css?1312345">
+    <link rel="stylesheet" href="assets/css/style.css?021">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -4166,9 +4166,31 @@
             arrayPessoas = document.querySelectorAll('.pessoa');
             for (let i = 0; i < arrayPessoas.length; i++) {
                 arrayPessoas[i].classList.remove('pessoa-active');
-            }
+            }            
             pessoa.classList.add('pessoa-active');
+
             objCurriculo = document.querySelector('.'+curriculo);
+            if ($(pessoa).offsetParent().hasClass('corpo-dream-team')) {
+
+                containerHeight = $(pessoa).offsetParent().height();
+                PosYCurriculo = ($(pessoa).offset().top - $(pessoa).offsetParent().offset().top) + $(objCurriculo).height();
+                if (containerHeight > PosYCurriculo) {
+                    propTop = ($(pessoa).offset().top - $(pessoa).offsetParent().offset().top) + 20;
+                    propBottom = 'initial';
+                } else {
+                    propTop = 'initial'
+                    propBottom = 25;
+                }
+
+            } else {
+                propTop = 25
+                propBottom = 'initial';
+            }
+
+            $(objCurriculo).css({
+                'top' : propTop,
+                'bottom' : propBottom
+            });
             objCurriculo.style.display = 'block';
 
             targetOffset = $(objCurriculo).offset().top;                           

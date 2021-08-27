@@ -275,7 +275,7 @@ header .container {
     .pessoa-active .img-over,
     .pessoa:hover .img-over { visibility: hidden; }
 
-    .pessoas-section .corpo .advogado-box-detalhe { position: absolute; z-index: 1; top: 25px;}
+    .pessoas-section .corpo .advogado-box-detalhe { position: absolute; z-index: 1; /*top: 25px;*/ }
     .pessoas-section .corpo .advogado-box-detalhe { display: none; }
     .advogado-box-detalhe { 
         max-width: 830px; 
@@ -679,9 +679,16 @@ section.fale-section {display: block;}
         padding-bottom: 380px;
         background-size: 75%;
     }
+        .pessoas-section .corpo-dream-team .advogado-box-detalhe {
+            padding-bottom: 0;
+        }
     .advogado-box-detalhe .advogado-foto {
         flex-direction: column;
     }
+        .corpo-dream-team .advogado-foto .foto {
+            width: 100%;
+            padding: 25px;
+        }
     .advogado-box-detalhe .advogado-foto .nome-conhecimento {
         padding-bottom: 0px;
         width: 100%;
@@ -691,6 +698,10 @@ section.fale-section {display: block;}
         padding-left: 30px;
         width: 100%;
     }
+
+        .corpo-dream-team .advogado-foto .informacoes .curriculo {
+            padding-right: 30px;
+        }
 
     .titulo-default h2 {
         font-size: 27px;
