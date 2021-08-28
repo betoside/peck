@@ -265,7 +265,7 @@ header .container {
         .dream-team-header span { display: inline-block; font-size: 27px; color: var(--verde-escuro); text-transform: uppercase; }
         .dream-team-header span img { width: 33px; }
 
-        .pessoas-section .corpo-dream-team .pessoa { width: 20%; height: 211px; }
+        .pessoas-section .corpo-dream-team .pessoa { width: 20%; /*height: 211px;*/ height: 240px; }
         .pessoas-section .corpo-dream-team .pessoa .nome-conhecimento .nome { font-size: 18px; }
         .pessoas-section .corpo-dream-team .pessoa .nome-conhecimento .conhecimento { font-size: 11px; }
 
@@ -274,7 +274,7 @@ header .container {
         .pessoas-section .corpo-dream-team .img-over {
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center -3px;
+            background-position: center 0px;
         }
 
 
@@ -441,6 +441,19 @@ section.pessoas-section,
 section.reconhecimento-section,
 section.fale-section {display: block;}
  */
+
+@media (min-width:1600px) {
+
+
+
+    .pessoas-section .corpo .pessoa {
+        height: 450px;
+    }
+    .pessoas-section .corpo-dream-team .pessoa {
+        height: 480px;
+    }
+
+}
 
 
 @media (max-width:1024px) {
