@@ -83,18 +83,19 @@ header .container {
 
 .menu ul,
 .menu li {list-style: none;}
-.menu li {display: inline;padding: 0 10px;}
+.menu li {display: inline;padding: 0 8px;}
 .menu li:first-child { padding-left: 0; }
-.menu li a { text-transform: uppercase; color: var(--verde-claro); /*font-size: 25px;*/ font-size: 16px; text-decoration: none; font-weight: 300; transition: all ease 0.3s; }
+.menu li a { text-transform: uppercase; color: var(--verde-claro); /*font-size: 25px;*/ font-size: 14px; text-decoration: none; font-weight: 300; transition: all ease 0.3s; }
 .menu li.active a,
 .menu li a:hover { color: #fff; transition: all ease 0.3s; }
 
 /* .navegacao .social-idioma { margin-top: -42px; margin-left: 10px;} */
-.navegacao .social { margin-left: 20px; }
+.navegacao .social { margin-left: 15px; }
 .navegacao .social ul {display: flex;}
 .navegacao .social ul,
 .navegacao .social li { list-style: none; }
 .navegacao .social li a { display: block; /*text-indent: -9000px;*/ margin-left: 5px; }
+.navegacao .social li:first-child a { margin-left: 0; }
 
 
 /* .navegacao .social-26 li a { width: 26px; height: 26px; background: url(../images/icos-social-header.gif) no-repeat; } */
@@ -108,7 +109,7 @@ header .container {
 .navegacao .social-26 li .facebook:hover { background-position: -63px -30px;} 
 .navegacao .social-26 li .linkedin:hover { background-position: -94px -30px;} 
 .navegacao .social-26 li .email:hover { background-position: -138px -30px;} 
-.navegacao .social-26 li .email {width: 33px;margin-left: 15px;} 
+.navegacao .social-26 li .email {width: 33px;margin-left: 13px;} 
 
 
     /* .navegacao .social-20 li a { width: 18px; height: 18px; background: url(../images/icos-social-header-20.gif) no-repeat; } */
@@ -131,9 +132,9 @@ header .container {
     .navegacao .social-20 li a svg:hover path { fill: #fff; /*transition: all ease 0.1s;*/ }
 
 
-.idioma { display: flex; justify-content: flex-end;margin-left: 20px;}
+.idioma { display: flex; justify-content: flex-end; margin-left: 17px; }
 .idioma a { display: inline-block; }
-.idioma a:last-child { margin-left: 7px; }
+.idioma a:last-child { margin-left: 10px; }
 .idioma img { width: 33px;}
 
 .slider-area { height: calc(100vh - 111px); background: var(--verde-escuro);}
@@ -475,10 +476,15 @@ section.fale-section {display: block;}
 
 
 @media (max-width:1024px) {
+
+    .idioma {
+        margin-left: 15px;
+        position: absolute;
+        right: 37px;
+        top: 14px;
+    }
+    .idioma img { width: 28px; }
     
-    .peck-desktop { display: none; }
-    .peck-mobile { display: block; }
-    .logo { width:126px; }
 
     .titulo-default h2 { font-size: 39px; }
     .reconhecimento-section .corpo .selo { width: 33%; padding-left: 50px; padding-right: 50px; padding-bottom: 0px; padding-top: 50px; }
@@ -535,9 +541,13 @@ section.fale-section {display: block;}
     header .container {
         padding: 10px 15px 0;
     }
-    .logo {
+    /* .logo {
         width: 115px;
-    }
+    } */
+    .peck-desktop { display: none; }
+    .peck-mobile { display: block; }
+    .logo { width:126px; }
+
 
     .menu li {
         padding: 0 5px;
@@ -548,6 +558,7 @@ section.fale-section {display: block;}
 
     .idioma {
         margin-left: 17px;
+        right: 15px;
     }
     .idioma img {
         width: 27px;
@@ -636,14 +647,14 @@ section.fale-section {display: block;}
         margin-left: 5px;
     }
 
-    .idioma {
+    /* .idioma {
         margin-left: 15px;
         position: absolute;
         right: 15px;
         top: 14px;
-    }
+    } */
     .idioma img {
-        width: 21px;
+        width: 25px;
     }
 
     .exibir-slide .conteudo-01 div:first-child {
