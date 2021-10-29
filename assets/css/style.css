@@ -399,9 +399,9 @@ header .container {
 
 .footer2 { background: var(--verde-escuro); padding: 30px 0; }
 .footer2 .container { display: flex; justify-content: space-between; padding: 0 60px; }
-.footer2 .parte1,
-.footer2 .parte2 { width: 48%; }
-.footer2 .parte1 a { font-size: 18px; color: var(--verde-claro); font-weight: 600; text-transform: uppercase; text-decoration: none; }
+.footer2 .parte1 { width: 69%; color: var(--verde-claro); font-weight: 600; font-size: 15px; }
+.footer2 .parte2 { width: 30%; }
+.footer2 .parte1 a { font-size: 14px; color: var(--verde-claro); font-weight: 600; text-transform: uppercase; text-decoration: none; }
 
 .footer2 .parte2 { 
     font-size: 18px; color: #000; font-weight: 400; display: flex; align-items: center; 
@@ -600,6 +600,12 @@ section.fale-section {display: block;}
     .footer2 .parte1{
         padding-top: 6px;
     }
+
+    .footer1 .container,
+    .footer2 .container { padding: 0 30px; }
+    .footer2 .parte1,
+    .footer2 .parte1 a { font-size: 12px; }
+    
 
 }
 
@@ -826,9 +832,17 @@ section.fale-section {display: block;}
         justify-content: center;
     }
 
+}
 
 
+@media (max-width:490px) {
 
-
+    .footer2 .parte1 a {
+        display: block;
+        padding: 10px 0;
+    }
+    .footer2 .parte1 span {
+        display: none;
+    }
 
 }
