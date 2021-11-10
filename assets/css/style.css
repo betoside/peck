@@ -256,7 +256,7 @@ header .container {
 .pessoas-section .titulo-default { margin-bottom: 40px; }
 .pessoas-section .olho {font-size: 28px; color: var(--verde-escuro);font-weight: 400;text-align: center;padding: 0 90px;margin-bottom: 60px;}
 .pessoas-section .olho strong {display: inline-block;}
-.pessoas-section .corpo { display: flex; justify-content: start; flex-wrap: wrap; }
+.pessoas-section .corpo { display: flex; justify-content: center; flex-wrap: wrap; }
 .pessoas-section .corpo { position: relative; }
 
 .pessoas-section .corpo .pessoa { width: 33.33%; height: 345px; position: relative; cursor: pointer; }
