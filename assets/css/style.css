@@ -198,6 +198,23 @@ header .container {
         background-size: cover;
     }
 
+
+    .banner_societario { 
+        background: url(../images/banner_societario.jpg?i=01) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+    .banner_nucleoPMO { 
+        background: url(../images/banner_nucleoPMO.jpg?i=01) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+    .banner_legalDesign { 
+        background: url(../images/banner_legalDesign.jpg?i=01) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+
     
 
 
