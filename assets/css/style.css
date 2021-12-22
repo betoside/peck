@@ -141,7 +141,7 @@ header .container {
 .exibir-slide { background-size: cover; height: calc(100vh - 111px); }
 
     .conteudo-slide {display: flex; justify-content: space-between; align-items: center;}
-    .conteudo-01 { background: url(../images/banner_direito-slider.jpg?i=01) no-repeat center; }
+    .conteudo-01 { background: url(../images/banner_direito-slider.jpg?i=02) no-repeat center; }
     .conteudo-01 div img { max-width: 100%; }
     .conteudo-slide div { 
         width: 45%; height: calc(100vh - 111px);
@@ -187,30 +187,30 @@ header .container {
     }
 
     .banner_lgpd3 { 
-        background: url(../images/banner_lgpd3.jpg?i=01) no-repeat center;
+        background: url(../images/banner_lgpd3.jpg?i=02) no-repeat center;
         display: flex; justify-content: center; align-items: center;
         background-size: cover;
     }
 
     .banner_time3 { 
-        background: url(../images/banner_time3.jpg?i=01) no-repeat center;
+        background: url(../images/banner_time3.jpg?i=02) no-repeat center;
         display: flex; justify-content: center; align-items: center;
         background-size: cover;
     }
 
 
     .banner_societario { 
-        background: url(../images/banner_societario.jpg?i=01) no-repeat center;
+        background: url(../images/banner_societario_211220.jpg?i=02) no-repeat center;
         display: flex; justify-content: center; align-items: center;
         background-size: cover;
     }
     .banner_nucleoPMO { 
-        background: url(../images/banner_nucleoPMO.jpg?i=01) no-repeat center;
+        background: url(../images/banner_nucleoPMO_211220.jpg?i=02) no-repeat center;
         display: flex; justify-content: center; align-items: center;
         background-size: cover;
     }
     .banner_legalDesign { 
-        background: url(../images/banner_legalDesign.jpg?i=01) no-repeat center;
+        background: url(../images/banner_legalDesign_211220.jpg?i=02) no-repeat center;
         display: flex; justify-content: center; align-items: center;
         background-size: cover;
     }
@@ -221,7 +221,7 @@ header .container {
 .quem-somos {padding-top: 90px;padding-bottom: 70px;}
 .titulo-default { margin-bottom: 60px; overflow: hidden; }
 .titulo-default h2 { font-size: 43px; font-weight: 300; color: var(--verde-escuro);text-transform: uppercase; }
-.titulo-default .grafismo { height: 58px; background: url(../images/titulo-grafismo.png?i=01) no-repeat right 0;}
+.titulo-default .grafismo { height: 58px; background: url(../images/titulo-grafismo.png?i=02) no-repeat right 0;}
 
 .quem-somos h3,
 .quem-somos p {margin: 0; margin-bottom: 30px;}
@@ -235,7 +235,7 @@ header .container {
 .quem-somos .grafismo img {max-width: 100%;}
 .quem-somos .grafismo { display: flex; }
 
-.visao-section {background: url(../images/section-visao.jpg?i=012) no-repeat center; background-size: cover;}
+.visao-section {background: url(../images/section-visao.jpg?i=022) no-repeat center; background-size: cover;}
 .visao-section .container {padding-top: 50px;padding-bottom: 220px;}
 .visao-section .titulo-default h2 { color: #fff; }
 .visao-section .corpo {font-size: 32px;font-weight: 500;font-style: italic;color: #fff;}
@@ -505,7 +505,7 @@ section.fale-section {display: block;}
 
     .titulo-default h2 { font-size: 39px; }
     .reconhecimento-section .corpo .selo { width: 33%; padding-left: 50px; padding-right: 50px; padding-bottom: 0px; padding-top: 50px; }
-    .titulo-default .grafismo { height: 36px; background-image: url(../images/titulo-grafismo-1024.png?i=01); }
+    .titulo-default .grafismo { height: 36px; background-image: url(../images/titulo-grafismo-1024.png?i=02); }
 
     .quem-somos h3 {
         font-size: 20px;
@@ -657,7 +657,7 @@ section.fale-section {display: block;}
         color: var(--verde-escuro);
         font-weight: 600;
 
-        background: url(../images/ico-plus-claro.png?i=01) no-repeat 0 center;
+        background: url(../images/ico-plus-claro.png?i=02) no-repeat 0 center;
         background-size: 10px;
         padding-left: 20px;
         width: 100%;
