@@ -192,6 +192,12 @@ header .container {
         background-size: cover;
     }
 
+    .banner_lgpd4 { 
+        background: url(../images/banner-lgpd-310122.jpg?i=02) no-repeat center;
+        display: flex; justify-content: center; align-items: center;
+        background-size: cover;
+    }
+
     .banner_time3 { 
         background: url(../images/banner_time3.jpg?i=02) no-repeat center;
         display: flex; justify-content: center; align-items: center;
