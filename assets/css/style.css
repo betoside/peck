@@ -221,6 +221,12 @@ header .container {
         background-size: cover;
     }
 
+    .banner_hotline { 
+        background: url(../images/banner-hotline.png?i=02) no-repeat center;
+        /* display: flex; justify-content: center; align-items: center; */
+        background-size:contain;
+    }
+
     
 
 
