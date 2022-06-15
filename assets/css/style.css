@@ -344,6 +344,19 @@ header .container {
     .advogado-box-detalhe .advogado-foto .nome-conhecimento .conhecimento { font-size: 15px; color: #fff; font-weight: 600; }
     .advogado-box-detalhe .advogado-foto .curriculo { width: 52%; color: #fff; font-size: 13px; padding-left: 10px; padding-top: 26px; padding-bottom: 20px; }
     .advogado-box-detalhe .advogado-foto .curriculo p { margin-bottom: 20px; }
+
+        .curriculo-social{ display: flex; justify-content: end; }
+        .curriculo-social a{ 
+            display: inline-block; 
+            margin-left: 15px; 
+            background: white;
+            width: 40px;
+            padding: 10px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .curriculo-social a img{ width: 100%; }
         
         
         .corpo-dream-team .advogado-box-detalhe { padding-bottom: 30px; }
