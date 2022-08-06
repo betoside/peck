@@ -25,6 +25,7 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
     if ($assunto == 'Imprensa') {
         $email_to = "imprensa@peckadv.com.br";
     }
+    $email_to = "peckteste@peckadv.com.br";
 
     $nome = addslashes($_POST['nome']);
     $emailFromForm = addslashes($_POST['email']);   
@@ -33,11 +34,12 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
 
     $mensagem = addslashes($_POST['mensagem']);
     $mensagem = nl2br($mensagem, false);
-
+    
     if(isset($_POST['assinar'])){
         $assinar = "Sim, desejo receber newsletter";
     } else {
         $assinar = "Não, muito obrigado";
+        $_POST['assinar'] = 0;
     }
 
     $preview = "";
@@ -48,7 +50,9 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
                 '<strong>Empresa</strong>: '.$empresa. "<br><br>" .
                 '<strong>Telefone</strong>: '.$telefone. "<br><br>" .
                 '<strong>Newsletter</strong>: '.$assinar. "<br><br>" .
-                '<strong>Mensagem</strong>: <br>'.$mensagem;
+                '<strong>Mensagem</strong>: <br>'.$mensagem. "<br><br>" .
+                '<strong>$_POST["assinar"]</strong>: '.$_POST["assinar"];
+                
     // echo $preview;
     // exit;
 
@@ -87,9 +91,9 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
             // $headers .= "Return-Path: " . $emailsender . $quebra_linha; // Se "não for Postfix"
             mail($email_to, $assunto, $msg, $headers );
         }
-        header("Location: index.html?Email_success=1");
+        header("Location: form-oct05.html?Email_success=1");
     } catch (\Throwable $th) {
-        header("Location: index.html?Email_Error=1");
+        header("Location: form-oct05.html?Email_Error=1");
     }
     // $mail($email_to, $assunto, $msg, $headers);
     // echo "<h2>Ok! Você receberá um email com o link para confirmar seu cadastro</h2>";
